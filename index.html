@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-image: url("images/pattern-background-desktop.svg");
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-color: hsl(225, 100%, 94%);
+      font-family: 'Red Hat Display', sans-serif;
+      color: hsl(223, 47%, 23%);
+      font-size: 16px;
+    }
+    h1{
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 900;
+      margin-top: 2rem;
+    }
+    button{
+      text-align: center;
+    }
+    .main{
+      text-align: center;
+      margin: 5% 35%;
+      background-color: #ffffff;
+      border-radius: 1rem;
+    }
+    .main-img{
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      position: relative;
+      border-radius: 1rem 1rem 0  0;
+    }
+    p {
+      display: inline-block;
+    }
+    .option{
+      background-color: hsl(225, 100%, 98%);
+      margin: 5% 10%;
+      border-radius: 1rem;
+      padding: 1rem;
+    }
+    .change{
+      text-decoration: underline;
+      color:hsl(245, 75%, 52%);
+      font-weight: 700;
+      display: inline-block;
+      position: relative;
+      bottom: 1.5rem;
+      margin-bottom: 0;
+      bottom: 15px;
+    }
+    .payment{
+      display: inline-block;
+      margin-right: 4.5rem;
+      position: relative;
+      bottom: 0.25rem;
+    }
+    .img1{
+      display: inline-block;
+      margin-right: 0.5rem;
+    }
+    .main-p{
+      margin: 0 2rem;
+      color: hsl(224, 23%, 55%);
+      font-weight: 500;
+    }
+    button{
+      background-color: hsl(245, 75%, 52%); 
+      border: none;
+      color: white;
+      border-radius: 0.5rem;
+      padding: 1rem 5.5rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+      box-shadow:0px 18px 15px rgba(0, 0, 0, 0.1); 
+    }
+    .plan{
+      margin-bottom: 0.25rem;
+      margin-top: 0;
+      font-weight: 900;
+    }
+    .price{
+      margin-top: 0.25rem;
+      margin-bottom: 0;
+      font-weight: 500;
+      color: hsl(224, 23%, 55%);
+    }
+    /*mobile*/
+    @media (max-width: 375px){
+      body{
+        background-color: hsl(225, 100%, 94%);
+      }
+      .main {
+        margin: 10% 2%;
+      }
+      .option{
+        margin: 5%;
+        padding: 0.5rem;
+      }
+      .plan{
+        margin-bottom: 0;
+      }
+      .price{
+        margin-top: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <img class="main-img" src="images/illustration-hero.svg">
+    <h1>Order Summary</h1>
+  
+    <p class="main-p">
+      You can now listen to millions of songs, audiobooks, and podcasts on any 
+      device anywhere you like!
+    </p>
+
+
+    <div class="option">
+      <img class="img1" src="images/icon-music.svg">
+      <div class="payment">
+        <p class="plan">Annual Plan</p>
+        <br>
+        <p class="price">$59.99/year</p>
+      </div>
+      <p class="change">Change</p>
+    </div>
+
+    <button>
+      Proceed to Payment
+    </button>
+    <br>
+  
+
+    <P style="color: hsl(224, 23%, 55%);font-weight:900;margin-bottom: 1.5rem;">Cancel Order</P>
+    
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ahmedsami666">AhmedSamy</a>.
+  </div>
+</body>
+</html>
